@@ -1,6 +1,8 @@
 :root {
   --text: #12141d;
   --background: #fff;
+  --alt-background: #e2dafe1a;
+  --accent: #736ced;
 }
 
 *,
@@ -15,10 +17,8 @@ html {
 
 body {
   margin: 0;
-
   background: var(--background);
   color: var(--text);
-
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -34,7 +34,6 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -46,7 +45,7 @@ h5,
 h6,
 p {
   margin: 0;
-  color: #12141d;
+  color: var(--text);
 }
 
 h1,
@@ -55,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 54px;
@@ -76,7 +75,6 @@ select {
 .container {
   width: 100%;
   max-width: 1296px;
-
   margin-inline: auto;
   padding-inline: 24px;
 }
@@ -92,21 +90,18 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 24px;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-
   gap: 98px;
 }
 
 .header__nav-list {
   display: flex;
   align-items: center;
-
   gap: 47px;
 }
 
@@ -123,14 +118,12 @@ select {
 .header__actions {
   display: flex;
   align-items: center;
-
   gap: 30px;
 }
 
 .header__login {
   font-weight: 600;
   line-height: 30px;
-
   white-space: nowrap;
 }
 
@@ -138,13 +131,10 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 20px;
   border-radius: 3px;
-
   background: #12141d;
-  color: #fff;
-
+  color: var(--background);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -154,7 +144,7 @@ select {
 .hero .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   padding-bottom: 95px;
 }
 
@@ -175,11 +165,12 @@ select {
   flex: 1;
   display: flex;
   justify-content: center;
+  min-width: 0;
 }
 
 .hero__title {
   max-width: 622px;
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 60px;
@@ -202,14 +193,10 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 10px;
-
   padding: 16px 20px;
-
   border: 2px solid #12141d17;
   border-radius: 3px;
-
   font-weight: 600;
   white-space: nowrap;
 }
@@ -219,28 +206,22 @@ select {
   padding: 16px 20px;
   border-radius: 3px;
   color: #fff;
-  background: #736ced;
+  background: var(--accent);
 }
 
 .hero__illustration {
   position: relative;
-
   width: 293px;
   height: 608px;
-
   overflow: visible;
-
   flex-shrink: 0;
 }
 
 .hero__phone {
   position: absolute;
-
   width: 400px;
   height: 715px;
-
   max-width: none;
-
   top: -53.5px;
   left: -53.5px;
 }
@@ -248,14 +229,14 @@ select {
 /* features */
 
 .features {
-  background: #e2dafe1a;
+  background: var(--alt-background);
 }
 
 .features .container {
   display: flex;
   flex-direction: column;
-  padding-block: 96px 143px;
   gap: 79px;
+  padding-block: 96px 143px;
 }
 
 .features__header {
@@ -275,9 +256,8 @@ select {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
-  padding: 0 13px;
 }
 
 .features__cards {
@@ -290,12 +270,11 @@ select {
   flex-direction: column;
   flex: 1 1 0;
   min-width: 0;
-  border-radius: 10px;
-  border-width: 1px;
   padding: 30px;
   gap: 32px;
-  background: #ffffff;
   border: 1px solid #12141d1a;
+  border-radius: 10px;
+  background: var(--background);
 }
 
 .features__card-icon {
@@ -317,7 +296,6 @@ select {
 
 .features__card-description {
   line-height: 24px;
-  letter-spacing: 0px;
-  width: 100%;
+  letter-spacing: 0;
   max-width: 341px;
 }
