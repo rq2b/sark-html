@@ -86,7 +86,7 @@ select {
   padding-bottom: 73px;
 }
 
-.header .container {
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,7 +141,7 @@ select {
 
 /* hero */
 
-.hero .container {
+.hero__wrapper {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -232,7 +232,7 @@ select {
   background: var(--alt-background);
 }
 
-.features .container {
+.features__wrapper {
   display: flex;
   flex-direction: column;
   gap: 79px;
