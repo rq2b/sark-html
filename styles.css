@@ -297,7 +297,6 @@ select {
 .showcase__wrapper {
   display: flex;
   align-items: center;
-  gap: 64px;
   padding-block: 122px;
 }
 
@@ -339,6 +338,8 @@ select {
 .showcase__stats {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  border-top: 1.5px solid #00000014;
   gap: 25px;
 }
 
