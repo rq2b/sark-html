@@ -203,7 +203,6 @@ select {
   display: flex;
   flex: 1;
   justify-content: center;
-  min-width: 0;
 }
 
 .hero__illustration {
@@ -302,10 +301,9 @@ select {
 
 .showcase__visual {
   display: flex;
-  flex: 1;
+  flex: 1 1 0;
   align-items: center;
   justify-content: center;
-  min-width: 0;
 }
 
 .showcase__illustration {
@@ -316,9 +314,11 @@ select {
 
 .showcase__content {
   display: flex;
-  flex: 0 0 508px;
+  flex: 1 1 508px;
   flex-direction: column;
   gap: 32px;
+  min-width: 0;
+  max-width: 508px;
 }
 
 .showcase__header {
