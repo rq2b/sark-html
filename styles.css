@@ -374,47 +374,6 @@ select {
 
 /* showcase-reverse */
 
-.showcase-reverse__title {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 54px;
-  letter-spacing: -1px;
-}
-
-.showcase-reverse__description {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0px;
-}
-
-.showcase-reverse__stat-text {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  opacity: 0.8;
-}
-
-.showcase-reverse__value {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 66px;
-  letter-spacing: -1px;
-}
-
-.showcase-reverse__button {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-}
-
 .showcase-reverse__wrapper {
   display: flex;
   padding-top: 179px;
@@ -433,6 +392,15 @@ select {
   gap: 26px;
 }
 
+.showcase-reverse__title {
+  font-size: 48px;
+}
+
+.showcase-reverse__description {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .showcase-reverse__visual {
   display: flex;
   flex: 1;
@@ -441,41 +409,44 @@ select {
 }
 
 .showcase-reverse__illustration {
-  width: 550;
-  height: 522;
+  width: 550px;
+  height: 522px;
   max-width: none;
 }
 
 .showcase-reverse__stats {
   display: flex;
   align-items: center;
-  border-top: 1.5px solid #00000014;
-  padding-top: 24px;
   gap: 26px;
+  padding-top: 24px;
+  border-top: 1.5px solid #00000014;
+}
+
+.showcase-reverse__value {
+  font-size: 48px;
+  line-height: 66px;
 }
 
 .showcase-reverse__stat-text {
   max-width: 227px;
+  opacity: 0.8;
+}
+
+.showcase-reverse__actions {
+  display: flex;
 }
 
 .showcase-reverse__button {
   display: flex;
   align-items: center;
-  background: var(--accent);
-  color: var(--background);
-  border-radius: 3px;
-  padding: 16px 20px;
   gap: 9px;
   width: fit-content;
+  padding: 16px 20px;
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--background);
+  font-weight: 600;
   white-space: nowrap;
-}
-
-.showcase-reverse__button span {
-  white-space: nowrap;
-}
-
-.showcase-reverse__actions {
-  display: flex;
 }
 
 .showcase-reverse__icon {
