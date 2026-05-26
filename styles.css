@@ -314,7 +314,7 @@ select {
 
 .showcase__content {
   display: flex;
-  flex: 1 1 508px;
+  flex: 1 1;
   flex-direction: column;
   gap: 32px;
   min-width: 0;
@@ -322,7 +322,9 @@ select {
 }
 
 .showcase__header {
-  max-width: 508px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .showcase__title {
@@ -354,18 +356,17 @@ select {
   opacity: 80%;
 }
 
-.showcase__actions {
+.showcase__button {
   display: flex;
+  align-items: center;
   gap: 9px;
   width: fit-content;
   padding: 16px 20px;
   border-radius: 3px;
   background: var(--accent);
-}
-
-.showcase__button {
+  color: var(--background);
   font-weight: 600;
-  color: #fff;
+  white-space: nowrap;
 }
 
 .showcase__icon {
@@ -430,10 +431,6 @@ select {
 .showcase-reverse__stat-text {
   max-width: 227px;
   opacity: 0.8;
-}
-
-.showcase-reverse__actions {
-  display: flex;
 }
 
 .showcase-reverse__button {
