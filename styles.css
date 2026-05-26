@@ -3,6 +3,11 @@
   --background: #fff;
   --alt-background: #e2dafe1a;
   --accent: #736ced;
+  --cta-gap: 9px;
+  --cta-padding-y: 16px;
+  --cta-padding-x: 20px;
+  --section-content-max: 508px;
+  --section-stat-text-max: 227px;
 }
 
 *,
@@ -291,77 +296,113 @@ select {
   max-width: 341px;
 }
 
-/* showcase */
+/* split-section */
 
-.showcase__wrapper {
+.split-section {
+  --split-section-padding-top: 122px;
+  --split-section-content-gap: 32px;
+  --split-section-header-gap: 26px;
+  --split-section-stats-gap: 25px;
+  --split-section-illustration-width: 283px;
+  --split-section-stat-opacity: 0.8;
+}
+
+.split-section--reverse {
+  --split-section-padding-top: 179px;
+  --split-section-content-gap: 47px;
+  --split-section-stats-gap: 26px;
+  --split-section-illustration-width: 550px;
+}
+
+.split-section__wrapper {
   display: flex;
   align-items: center;
-  padding-top: 122px;
+  gap: 24px;
+  padding-top: var(--split-section-padding-top);
 }
 
-.showcase__visual {
+.split-section--reverse .split-section__wrapper {
+  flex-direction: row-reverse;
+}
+
+.split-section__content {
   display: flex;
-  flex: 1 1 0;
-  align-items: center;
-  justify-content: center;
-}
-
-.showcase__illustration {
-  width: 283px;
-  height: 591px;
-  max-width: none;
-}
-
-.showcase__content {
-  display: flex;
-  flex: 1 1;
+  flex: 1 1 var(--section-content-max);
   flex-direction: column;
-  gap: 32px;
+  gap: var(--split-section-content-gap);
   min-width: 0;
-  max-width: 508px;
+  max-width: var(--section-content-max);
 }
 
-.showcase__header {
+.split-section__header {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: var(--split-section-header-gap);
 }
 
-.showcase__title {
+.split-section__title {
   font-size: 48px;
   line-height: 54px;
 }
 
-.showcase__description {
+.split-section__description {
   font-size: 18px;
   line-height: 30px;
 }
 
-.showcase__stats {
+.split-section__visual {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+
+  min-width: var(--split-section-illustration-width);
+}
+
+.split-section {
+  --split-section-illustration-width: 283px;
+  --split-section-illustration-height: 591px;
+}
+
+.split-section--reverse {
+  --split-section-illustration-width: 550px;
+  --split-section-illustration-height: 522px;
+}
+
+.split-section__illustration {
+  width: var(--split-section-illustration-width);
+  height: var(--split-section-illustration-height);
+  flex-shrink: 0;
+  max-width: none;
+}
+
+.split-section__stats {
   display: flex;
   align-items: center;
   padding-top: 24px;
   border-top: 1.5px solid #00000014;
-  gap: 25px;
+  gap: var(--split-section-stats-gap);
 }
 
-.showcase__value {
+.split-section__value {
   width: 89px;
   font-size: 48px;
   line-height: 66px;
 }
 
-.showcase__stat-text {
-  max-width: 227px;
-  opacity: 80%;
+.split-section__stat-text {
+  max-width: var(--section-stat-text-max);
+  opacity: var(--split-section-stat-opacity);
 }
 
-.showcase__button {
-  display: flex;
+/* cta-button */
+
+.cta-button {
+  display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: var(--cta-gap);
   width: fit-content;
-  padding: 16px 20px;
+  padding: var(--cta-padding-y) var(--cta-padding-x);
   border-radius: 3px;
   background: var(--accent);
   color: var(--background);
@@ -369,84 +410,7 @@ select {
   white-space: nowrap;
 }
 
-.showcase__icon {
-  width: 18px;
-}
-
-/* showcase-reverse */
-
-.showcase-reverse__wrapper {
-  display: flex;
-  padding-top: 179px;
-}
-
-.showcase-reverse__content {
-  display: flex;
-  flex-direction: column;
-  max-width: 508px;
-  gap: 47px;
-}
-
-.showcase-reverse__header {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.showcase-reverse__title {
-  font-size: 48px;
-}
-
-.showcase-reverse__description {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.showcase-reverse__visual {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.showcase-reverse__illustration {
-  width: 550px;
-  height: 522px;
-  max-width: none;
-}
-
-.showcase-reverse__stats {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  padding-top: 24px;
-  border-top: 1.5px solid #00000014;
-}
-
-.showcase-reverse__value {
-  font-size: 48px;
-  line-height: 66px;
-}
-
-.showcase-reverse__stat-text {
-  max-width: 227px;
-  opacity: 0.8;
-}
-
-.showcase-reverse__button {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  width: fit-content;
-  padding: 16px 20px;
-  border-radius: 3px;
-  background: var(--accent);
-  color: var(--background);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.showcase-reverse__icon {
+.cta-button__icon {
   width: 18px;
   height: 18px;
 }
