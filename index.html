@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,400&family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -16,18 +16,20 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <nav class="header__nav">
+          <div class="header__brand">
             <a href="/" class="header__logo">
-              <img src="images/logos/sark.png" alt="Go To Home Page" />
+              <img src="images/logos/sark.png" alt="Sark" />
             </a>
-            <ul class="header__nav-list">
-              <li class="header__nav-item"><a href="#">Demos</a></li>
-              <li class="header__nav-item"><a href="#">About</a></li>
-              <li class="header__nav-item"><a href="#">Blog</a></li>
-              <li class="header__nav-item"><a href="#">Pages</a></li>
-              <li class="header__nav-item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Demos</a></li>
+                <li class="header__nav-item"><a href="#">About</a></li>
+                <li class="header__nav-item"><a href="#">Blog</a></li>
+                <li class="header__nav-item"><a href="#">Pages</a></li>
+                <li class="header__nav-item"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="header__actions">
             <a href="#" class="header__login">Login</a>
             <a href="#" class="header__get-started">Get Started Free</a>
@@ -35,426 +37,426 @@
         </div>
       </div>
     </header>
-
-    <section class="hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <div class="hero__content">
-            <div class="hero__text">
-              <h1 class="hero__title">
-                Just one click away to create a modern app landing page
-              </h1>
-              <p class="hero__description">
-                App landing page is an important part of mobile app development
-                and app marketing strategy use your mobile device to quickly
-                create a landing page.
-              </p>
-            </div>
-            <div class="hero__actions">
-              <a href="#" class="hero__lets-get">Let's get started</a>
-              <a href="#" class="hero__watch-a-demo">
-                <img src="images/icons/play.svg" alt="" />
-                <span>Watch A Demo</span>
-              </a>
-            </div>
-          </div>
-          <div class="hero__visual">
-            <div class="hero__illustration">
-              <img
-                class="hero__phone"
-                src="images/illustrations/hero__illustration.svg"
-                alt="Illustration of the Sark app"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features">
-      <div class="container">
-        <div class="features__wrapper">
-          <div class="features__header">
-            <h2 class="features__section-title">
-              Some features that set Sharko apart from others
-            </h2>
-            <p class="features__section-description">
-              SHARKO has some unique features & It lets you create landing pages
-              or customize already existing templates easily as you like.
-            </p>
-          </div>
-          <div class="features__cards">
-            <div class="features__card">
-              <img
-                class="features__card-icon"
-                src="images/icons/idea.svg"
-                alt=""
-              />
-              <div class="features__card-body">
-                <h3 class="features__card-title">Innovative Solution</h3>
-                <p class="features__card-description">
-                  Innovative Solutions require your operate & approach the
-                  problem in a specific way so that you can improvements to
-                  system.
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <div class="hero__text">
+                <h1 class="hero__title">
+                  Just one click away to create a modern app landing page
+                </h1>
+                <p class="hero__description">
+                  App landing page is an important part of mobile app
+                  development and app marketing strategy use your mobile device
+                  to quickly create a landing page.
                 </p>
               </div>
-            </div>
-            <div class="features__card">
-              <img
-                class="features__card-icon"
-                src="images/icons/layers.svg"
-                alt=""
-              />
-              <div class="features__card-body">
-                <h3 class="features__card-title">Fully functional</h3>
-                <p class="features__card-description">
-                  A work that can be considered to be with practical use, such
-                  as software and apps having no point of view and non-fiction.
-                </p>
+              <div class="hero__actions">
+                <a href="#" class="hero__lets-get">Let's get started</a>
+                <a href="#" class="hero__watch-a-demo">
+                  <img src="images/icons/play.svg" alt="" />
+                  <span>Watch A Demo</span>
+                </a>
               </div>
             </div>
-            <div class="features__card">
-              <img
-                class="features__card-icon"
-                src="images/icons/lock.svg"
-                alt=""
-              />
-              <div class="features__card-body">
-                <h3 class="features__card-title">Secure Database</h3>
-                <p class="features__card-description">
-                  Your website data is always secure & protected with automatic
-                  daily backups and easily restore data with 1 click.
-                </p>
+            <div class="hero__visual">
+              <div class="hero__illustration">
+                <img
+                  class="hero__phone"
+                  src="images/illustrations/hero__illustration.svg"
+                  alt="Illustration of the Sark app"
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="split-section">
-      <div class="container">
-        <div class="split-section__wrapper">
-          <div class="split-section__content">
-            <div class="split-section__header">
-              <h2 class="split-section__title">
-                Organize your web app easily with Sharko
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+            <div class="features__header">
+              <h2 class="features__section-title">
+                Some features that set Sharko apart from others
               </h2>
-              <p class="split-section__description">
-                App landing pages are web pages designed to promote your mobile
-                application & drive downloads. With Sharko your leads will land
-                to get more information about your app and to download it.
+              <p class="features__section-description">
+                SHARKO has some unique features & It lets you create landing
+                pages or customize already existing templates easily as you
+                like.
               </p>
             </div>
-            <div class="split-section__stats">
-              <h2 class="split-section__value">3.5x</h2>
-              <p class="split-section__stat-text">
-                Mobile apps convert 3.5x higher than mobile websites
-              </p>
+            <div class="features__cards">
+              <div class="features__card">
+                <img
+                  class="features__card-icon"
+                  src="images/icons/idea.svg"
+                  alt=""
+                />
+                <div class="features__card-body">
+                  <h3 class="features__card-title">Innovative Solution</h3>
+                  <p class="features__card-description">
+                    Innovative Solutions require your operate & approach the
+                    problem in a specific way so that you can improvements to
+                    system.
+                  </p>
+                </div>
+              </div>
+              <div class="features__card">
+                <img
+                  class="features__card-icon"
+                  src="images/icons/layers.svg"
+                  alt=""
+                />
+                <div class="features__card-body">
+                  <h3 class="features__card-title">Fully functional</h3>
+                  <p class="features__card-description">
+                    A work that can be considered to be with practical use, such
+                    as software and apps having no point of view and
+                    non-fiction.
+                  </p>
+                </div>
+              </div>
+              <div class="features__card">
+                <img
+                  class="features__card-icon"
+                  src="images/icons/lock.svg"
+                  alt=""
+                />
+                <div class="features__card-body">
+                  <h3 class="features__card-title">Secure Database</h3>
+                  <p class="features__card-description">
+                    Your website data is always secure & protected with
+                    automatic daily backups and easily restore data with 1
+                    click.
+                  </p>
+                </div>
+              </div>
             </div>
-            <a class="cta-button" href="#">
-              Explore Now
-              <img
-                class="cta-button__icon"
-                src="images/icons/arrow.svg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="split-section__visual">
-            <img
-              class="split-section__illustration"
-              src="images/illustrations/showcase__illustration.svg"
-              alt="Illustration of insights"
-            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="split-section split-section--reverse">
-      <div class="container">
-        <div class="split-section__wrapper">
-          <div class="split-section__content">
-            <div class="split-section__header">
-              <h2 class="split-section__title">
-                Get detailed time and data for every project
+      <section class="split-section">
+        <div class="container">
+          <div class="split-section__wrapper">
+            <div class="split-section__content">
+              <div class="split-section__header">
+                <h2 class="split-section__title">
+                  Organize your web app easily with Sharko
+                </h2>
+                <p class="split-section__description">
+                  App landing pages are web pages designed to promote your
+                  mobile application & drive downloads. With Sharko your leads
+                  will land to get more information about your app and to
+                  download it.
+                </p>
+              </div>
+              <div class="split-section__stats">
+                <p class="split-section__value heading-style">3.5x</p>
+                <p class="split-section__stat-text">
+                  Mobile apps convert 3.5x higher than mobile websites
+                </p>
+              </div>
+              <a class="cta-button" href="#">
+                Explore Now
+                <img
+                  class="cta-button__icon"
+                  src="images/icons/arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="split-section__visual">
+              <img
+                class="split-section__illustration"
+                src="images/illustrations/showcase__illustration.svg"
+                alt="Illustration of insights"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="split-section split-section--reverse">
+        <div class="container">
+          <div class="split-section__wrapper">
+            <div class="split-section__content">
+              <div class="split-section__header">
+                <h2 class="split-section__title">
+                  Get detailed time and data for every project
+                </h2>
+                <p class="split-section__description">
+                  App landing pages are web pages designed to promote your
+                  mobile application & drive downloads. With Sharko your leads
+                  will land to get more information about your app and to
+                  download it.
+                </p>
+              </div>
+              <div class="split-section__stats">
+                <p class="split-section__value heading-style">2.4x</p>
+                <p class="split-section__stat-text">
+                  Mobile apps convert 3.5x higher than mobile websites
+                </p>
+              </div>
+              <a class="cta-button" href="#">
+                Explore Now
+                <img
+                  class="cta-button__icon"
+                  src="images/icons/arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="split-section__visual">
+              <img
+                class="split-section__illustration"
+                src="images/illustrations/showcase-reverse__illustration.svg"
+                alt="Illustration of metrics"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="container">
+          <div class="pricing__wrapper">
+            <div class="pricing__header">
+              <h2 class="pricing__title">
+                We offer great price plans for the application
               </h2>
-              <p class="split-section__description">
-                App landing pages are web pages designed to promote your mobile
-                application & drive downloads. With Sharko your leads will land
-                to get more information about your app and to download it.
+              <p class="pricing__section-description">
+                Objectively market-driven intellectual capital rather than
+                covalent best practices facilitate strategic information before
+                innovation.
               </p>
             </div>
-            <div class="split-section__stats">
-              <h2 class="split-section__value">2.4x</h2>
-              <p class="split-section__stat-text">
-                Mobile apps convert 3.5x higher than mobile websites
-              </p>
-            </div>
-            <a class="cta-button" href="#">
-              Explore Now
-              <img
-                class="cta-button__icon"
-                src="images/icons/arrow.svg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="split-section__visual">
-            <img
-              class="split-section__illustration"
-              src="images/illustrations/showcase-reverse__illustration.svg"
-              alt="Illustration of metrics"
-            />
+            <ul class="pricing__cards">
+              <li class="pricing__card">
+                <div class="pricing__card-header">
+                  <p class="pricing__plan">Starter Plan</p>
+                  <div class="pricing__cost">
+                    <h2 class="pricing__rate">$5</h2>
+                    <p class="pricing__rate-frequency">/ Per Month</p>
+                  </div>
+                  <p class="pricing__card-description">
+                    This package is suitable for teams 1-15 people
+                  </p>
+                </div>
+                <ul class="pricing__features">
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">10 GB Disk Space</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">1 Year Support</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">500 Queries</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Basic Statistics</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Free Custom Domain</p>
+                  </li>
+                </ul>
+                <a class="pricing__purchase" href="#"> Purchase Now</a>
+              </li>
+              <li class="pricing__card">
+                <div class="pricing__card-header">
+                  <p class="pricing__plan">Basic Plan</p>
+                  <div class="pricing__cost">
+                    <h2 class="pricing__rate">$20</h2>
+                    <p class="pricing__rate-frequency">/ Per Month</p>
+                  </div>
+                  <p class="pricing__card-description">
+                    This package is suitable for teams 1-50 people
+                  </p>
+                </div>
+                <ul class="pricing__features">
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">500 GB Disk Space</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">5 Year Support</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">600 Queries</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Basic Statistics</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Free Custom Domain</p>
+                  </li>
+                </ul>
+                <a class="pricing__purchase" href="#"> Purchase Now</a>
+              </li>
+              <li class="pricing__card pricing__card--featured">
+                <div class="pricing__card-header">
+                  <p class="pricing__plan">Popular Plan</p>
+                  <div class="pricing__cost">
+                    <h2 class="pricing__rate">$46</h2>
+                    <p class="pricing__rate-frequency">/ Per Month</p>
+                  </div>
+                  <p class="pricing__card-description">
+                    This package is suitable for teams 1-100 people
+                  </p>
+                </div>
+                <ul class="pricing__features">
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-lilac.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">800 GB Disk Space</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-lilac.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">10 Year Support</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-lilac.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">800 Queries</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-lilac.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Fully Statistics</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-lilac.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Free Custom Domain</p>
+                  </li>
+                </ul>
+                <a class="pricing__purchase" href="#"> Purchase Now</a>
+              </li>
+              <li class="pricing__card">
+                <div class="pricing__card-header">
+                  <p class="pricing__plan">Premium Plan</p>
+                  <div class="pricing__cost">
+                    <h2 class="pricing__rate">$90</h2>
+                    <p class="pricing__rate-frequency">/ Per Month</p>
+                  </div>
+                  <p class="pricing__card-description">
+                    This package is suitable for big team or company
+                  </p>
+                </div>
+                <ul class="pricing__features">
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">1000 GB Disk Space</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Unlimited Support</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Unlimited Queries</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Fully Statistics</p>
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      class="pricing__feature-icon"
+                      src="images/icons/checkmark-purple.svg"
+                      alt=""
+                    />
+                    <p class="pricing__feature-text">Free Custom Domain</p>
+                  </li>
+                </ul>
+                <a class="pricing__purchase" href="#"> Purchase Now</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="pricing">
-      <div class="container">
-        <div class="pricing__wrapper">
-          <div class="pricing__header">
-            <h2 class="pricing__title">
-              We offer great price plans for the application
-            </h2>
-            <p class="pricing__section-description">
-              Objectively market-driven intellectual capital rather than
-              covalent best practices facilitate strategic information before
-              innovation.
-            </p>
-          </div>
-          <ul class="pricing__cards">
-            <li class="pricing__card">
-              <div class="pricing__card-header">
-                <p class="pricing__plan">Starter Plan</p>
-                <div class="pricing__cost">
-                  <h2 class="pricing__rate">$5</h2>
-                  <p class="pricing__rate-frequency">/ Per Month</p>
-                </div>
-                <p class="pricing__card-description">
-                  This package is suitable for teams 1-15 people
-                </p>
-              </div>
-              <ul class="pricing__features">
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">10 GB Disk Space</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">1 Year Support</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">500 Queries</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Basic Statistics</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Free Custom Domain</p>
-                </li>
-              </ul>
-              <a class="pricing__purchase" href="#"> Purchase Now </a>
-            </li>
-            <li class="pricing__card">
-              <div class="pricing__card-header">
-                <p class="pricing__plan">Basic Plan</p>
-                <div class="pricing__cost">
-                  <h2 class="pricing__rate">$20</h2>
-                  <p class="pricing__rate-frequency">/ Per Month</p>
-                </div>
-                <p class="pricing__card-description">
-                  This package is suitable for teams 1-50 people
-                </p>
-              </div>
-              <ul class="pricing__features">
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">500 GB Disk Space</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">5 Year Support</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">600 Queries</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Basic Statistics</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Free Custom Domain</p>
-                </li>
-              </ul>
-              <a class="pricing__purchase" href="#">
-                <p class="pricing__purchase-text">Purchase Now</p>
-              </a>
-            </li>
-            <li class="pricing__card pricing__card--featured">
-              <div class="pricing__card-header">
-                <p class="pricing__plan">Popular Plan</p>
-                <div class="pricing__cost">
-                  <h2 class="pricing__rate">$46</h2>
-                  <p class="pricing__rate-frequency">/ Per Month</p>
-                </div>
-                <p class="pricing__card-description">
-                  This package is suitable for teams 1-100 people
-                </p>
-              </div>
-              <ul class="pricing__features">
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-lilac.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">800 GB Disk Space</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-lilac.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">10 Year Support</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-lilac.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">800 Queries</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-lilac.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Fully Statistics</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-lilac.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Free Custom Domain</p>
-                </li>
-              </ul>
-              <a class="pricing__purchase" href="#">
-                <p class="pricing__purchase-text">Purchase Now</p>
-              </a>
-            </li>
-            <li class="pricing__card">
-              <div class="pricing__card-header">
-                <p class="pricing__plan">Premium Plan</p>
-                <div class="pricing__cost">
-                  <h2 class="pricing__rate">$90</h2>
-                  <p class="pricing__rate-frequency">/ Per Month</p>
-                </div>
-                <p class="pricing__card-description">
-                  This package is suitable for big team or company
-                </p>
-              </div>
-              <ul class="pricing__features">
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">1000 GB Disk Space</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Unlimited Support</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Unlimited Queries</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Fully Statistics</p>
-                </li>
-                <li class="pricing__feature">
-                  <img
-                    class="pricing__feature-icon"
-                    src="images/icons/checkmark-purple.svg"
-                    alt=""
-                  />
-                  <p class="pricing__feature-text">Free Custom Domain</p>
-                </li>
-              </ul>
-              <a class="pricing__purchase" href="#">
-                <p class="pricing__purchase-text">Purchase Now</p></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

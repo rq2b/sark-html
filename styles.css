@@ -9,6 +9,9 @@
   --border-white: #ffffff1a;
   --border-subtle: #00000014;
 
+  --text-muted: #12141dcc;
+  --text-subtle: #12141db3;
+
   --cta-gap: 9px;
   --cta-padding-y: 16px;
   --cta-padding-x: 20px;
@@ -31,7 +34,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -91,6 +94,12 @@ select {
   padding-inline: 24px;
 }
 
+.heading-style {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
 /* header */
 
 .header {
@@ -105,7 +114,7 @@ select {
   gap: 24px;
 }
 
-.header__nav {
+.header__brand {
   display: flex;
   align-items: center;
   gap: 98px;
@@ -397,7 +406,7 @@ select {
 
 .split-section__stat-text {
   max-width: var(--section-stat-text-max);
-  opacity: var(--split-section-stat-opacity);
+  color: rgb(18 20 29 / var(--split-section-stat-opacity));
 }
 
 /* cta-button */
@@ -444,7 +453,7 @@ select {
   max-width: 582px;
   font-size: 18px;
   line-height: 30px;
-  opacity: 0.8;
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -456,7 +465,7 @@ select {
 .pricing__card {
   --pricing-card-bg: var(--background);
   --pricing-card-text: var(--text);
-  --pricing-card-description: rgb(18 20 29 / 0.7);
+  --pricing-card-description: #12141db3;
   --pricing-card-border: var(--border-light);
   --pricing-card-button-bg: var(--background);
   --pricing-card-button-text: var(--text);
@@ -517,7 +526,6 @@ select {
 .pricing__card-description {
   max-width: 198px;
   color: var(--pricing-card-description);
-  opacity: 0.7;
 }
 
 .pricing__features {
