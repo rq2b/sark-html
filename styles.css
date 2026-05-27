@@ -748,7 +748,6 @@ select {
   gap: 50px;
 }
 
-
 .footer__link-image {
   width: 100%;
   height: 100%;
@@ -787,4 +786,85 @@ select {
   line-height: 20px;
   color: var(--text-subtle);
   text-align: right;
+}
+
+/* media */
+
+/*
+1250 - first breakpoint (tablet LS)
+
+header, hero, features, split-section, split-section--reverse, testimonials, footer - breaks at 950px
+
+1300 - pricing breaks
+
+download - doesn't break in any layout
+*/
+
+@media (max-width: 1250px) {
+  .features__cards,
+  .pricing__cards,
+  .testimonial__cards {
+    flex-wrap: wrap;
+  }
+
+  .features__card,
+  .pricing__card,
+  .testimonial__card {
+    flex: 1 1 280px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .features__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features__card {
+    flex: 0 1 400px;
+  }
+
+  .footer__main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__column {
+    flex: 0 1 280px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__wrapper {
+    flex-direction: column;
+  }
+
+  .hero__wrapper {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .hero__content {
+    flex: 0 1 462px;
+  }
+
+  .split-section__wrapper,
+  .split-section--reverse .split-section__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 650px) {
+  .header__brand {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer__meta {
+    flex-direction: column;
+  }
 }
