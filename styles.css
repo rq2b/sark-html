@@ -701,3 +701,87 @@ select {
   padding-block: 80px 88px;
   gap: 13px;
 }
+
+/* footer */
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+  padding-block: 80px 50px;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 80px;
+  height: 20px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__nav-item {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.footer__column-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__meta {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 29px;
+}
+
+.footer__social-link {
+  width: 11px;
+  height: 9px;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 28px;
+}
+
+.footer__legal-link {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
