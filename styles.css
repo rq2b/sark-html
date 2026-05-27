@@ -431,6 +431,7 @@ select {
   align-items: center;
   gap: 84px;
   padding-top: 246px;
+  padding-bottom: 117px;
 }
 
 .pricing__header {
@@ -561,3 +562,6 @@ select {
   background: var(--pricing-card-button-bg);
   color: var(--pricing-card-button-text);
 }
+
+/* testimonial */
+
