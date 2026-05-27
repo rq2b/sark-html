@@ -913,3 +913,66 @@ download - doesn't break in any layout
     text-align: center;
   }
 }
+
+/* animations */
+
+.header__get-started,
+.hero__lets-get,
+.hero__watch-a-demo,
+.pricing__purchase,
+.cta-button {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.header__get-started:hover,
+.hero__lets-get:hover,
+.hero__watch-a-demo:hover,
+.pricing__purchase:hover,
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgb(18 20 29 / 0.12);
+}
+
+.features__card,
+.pricing__card,
+.testimonial__card {
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.features__card:hover,
+.pricing__card:hover,
+.testimonial__card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgb(18 20 29 / 0.12);
+
+  box-shadow: 0 16px 40px rgb(18 20 29 / 0.08);
+}
+
+.footer__social-link {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.7;
+}
+
+a:not(
+    .header__get-started,
+    .hero__lets-get,
+    .hero__watch-a-demo,
+    .pricing__purchase,
+    .cta-button
+  ):hover {
+  color: var(--accent);
+}
