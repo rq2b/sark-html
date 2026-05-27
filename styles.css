@@ -814,7 +814,7 @@ download - doesn't break in any layout
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1050px), (max-aspect-ratio: 10/16) {
   .features__cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -838,7 +838,7 @@ download - doesn't break in any layout
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 950px), (max-aspect-ratio: 10/16) {
   .header__wrapper {
     flex-direction: column;
   }
@@ -864,6 +864,9 @@ download - doesn't break in any layout
 
   .hero__visual {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero__phone {
@@ -876,7 +879,7 @@ download - doesn't break in any layout
   }
 
   .hero__illustration {
-    width: 100%;
+    width: max-content;
     height: auto;
   }
 
@@ -891,7 +894,7 @@ download - doesn't break in any layout
   }
 
   .split-section__illustration {
-    width: 100%;
+    width: max-content;
     height: auto;
   }
 }
