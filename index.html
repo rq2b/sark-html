@@ -41,7 +41,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero__wrapper">
+          <div class="hero__wrapper reveal">
             <div class="hero__content">
               <div class="hero__text">
                 <h1 class="hero__title">
@@ -77,7 +77,7 @@
       <section class="features">
         <div class="container">
           <div class="features__wrapper">
-            <div class="features__header">
+            <div class="features__header reveal">
               <h2 class="features__section-title">
                 Some features that set Sharko apart from others
               </h2>
@@ -87,8 +87,8 @@
                 like.
               </p>
             </div>
-            <div class="features__cards">
-              <div class="features__card">
+            <div class="features__cards" data-stagger>
+              <div class="features__card reveal">
                 <img
                   class="features__card-icon"
                   src="images/icons/idea.svg"
@@ -103,7 +103,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__card">
+              <div class="features__card reveal">
                 <img
                   class="features__card-icon"
                   src="images/icons/layers.svg"
@@ -118,7 +118,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__card">
+              <div class="features__card reveal">
                 <img
                   class="features__card-icon"
                   src="images/icons/lock.svg"
@@ -140,7 +140,7 @@
 
       <section class="split-section">
         <div class="container">
-          <div class="split-section__wrapper">
+          <div class="split-section__wrapper reveal">
             <div class="split-section__content">
               <div class="split-section__header">
                 <h2 class="split-section__title">
@@ -181,7 +181,7 @@
 
       <section class="split-section split-section--reverse">
         <div class="container">
-          <div class="split-section__wrapper">
+          <div class="split-section__wrapper reveal">
             <div class="split-section__content">
               <div class="split-section__header">
                 <h2 class="split-section__title">
@@ -223,7 +223,7 @@
       <section class="pricing">
         <div class="container">
           <div class="pricing__wrapper">
-            <div class="pricing__header">
+            <div class="pricing__header reveal">
               <h2 class="pricing__title">
                 We offer great price plans for the application
               </h2>
@@ -233,8 +233,8 @@
                 innovation.
               </p>
             </div>
-            <ul class="pricing__cards">
-              <li class="pricing__card">
+            <ul class="pricing__cards" data-stagger>
+              <li class="pricing__card reveal">
                 <div class="pricing__card-header">
                   <p class="pricing__plan">Starter Plan</p>
                   <div class="pricing__cost">
@@ -289,7 +289,7 @@
                 </ul>
                 <a class="pricing__purchase" href="#"> Purchase Now</a>
               </li>
-              <li class="pricing__card">
+              <li class="pricing__card reveal">
                 <div class="pricing__card-header">
                   <p class="pricing__plan">Basic Plan</p>
                   <div class="pricing__cost">
@@ -344,7 +344,7 @@
                 </ul>
                 <a class="pricing__purchase" href="#"> Purchase Now</a>
               </li>
-              <li class="pricing__card pricing__card--featured">
+              <li class="pricing__card pricing__card--featured reveal">
                 <div class="pricing__card-header">
                   <p class="pricing__plan">Popular Plan</p>
                   <div class="pricing__cost">
@@ -399,7 +399,7 @@
                 </ul>
                 <a class="pricing__purchase" href="#"> Purchase Now</a>
               </li>
-              <li class="pricing__card">
+              <li class="pricing__card reveal">
                 <div class="pricing__card-header">
                   <p class="pricing__plan">Premium Plan</p>
                   <div class="pricing__cost">
@@ -462,7 +462,7 @@
       <section class="testimonial">
         <div class="container">
           <div class="testimonial__wrapper">
-            <div class="testimonial__header">
+            <div class="testimonial__header reveal">
               <h2 class="testimonial__title heading-style">
                 What our satisfied clients say about Sharko
               </h2>
@@ -472,8 +472,8 @@
                 like home.
               </p>
             </div>
-            <ul class="testimonial__cards">
-              <li class="testimonial__card">
+            <ul class="testimonial__cards" data-stagger>
+              <li class="testimonial__card reveal">
                 <img
                   class="testimonial__rating"
                   src="images/icons/stars.svg"
@@ -496,7 +496,7 @@
                   </div>
                 </div>
               </li>
-              <li class="testimonial__card">
+              <li class="testimonial__card reveal">
                 <img
                   class="testimonial__rating"
                   src="images/icons/stars.svg"
@@ -519,7 +519,7 @@
                   </div>
                 </div>
               </li>
-              <li class="testimonial__card">
+              <li class="testimonial__card reveal">
                 <img
                   class="testimonial__rating"
                   src="images/icons/stars.svg"
@@ -696,5 +696,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="script.js"></script> 
   </body>
 </html>

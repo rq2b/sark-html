@@ -18,6 +18,10 @@
 
   --section-content-max: 508px;
   --section-stat-text-max: 227px;
+
+  --motion-duration: 0.65s;
+  --motion-distance: 24px;
+  --motion-easing: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 *,
@@ -28,6 +32,25 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0.3;
+  filter: grayscale(100%);
+  transform: translateY(var(--motion-distance));
+
+  transition:
+    opacity var(--motion-duration) var(--motion-easing),
+    transform var(--motion-duration) var(--motion-easing),
+    filter var(--motion-duration) var(--motion-easing);
+
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(0);
 }
 
 body {
@@ -941,9 +964,12 @@ download - doesn't break in any layout
 .pricing__card,
 .testimonial__card {
   transition:
+    opacity var(--motion-duration) var(--motion-easing),
+    transform var(--motion-duration) var(--motion-easing),
     border-color 0.2s ease,
-    transform 0.2s ease,
     box-shadow 0.2s ease;
+
+  transition-delay: var(--reveal-delay, 0s);
 }
 
 .features__card:hover,
